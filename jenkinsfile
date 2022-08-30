@@ -5,11 +5,11 @@ pipeline {
         }
     }
 
-    stage('Code checkout') {
+    /*stage('Code checkout') {
         steps {
             git 'https://github.com/atilanof/PruebaJenkins.git'
         }
-    }
+    }*/
     stage('Build') {
         steps {
             sh '"mvn" -Dmaven.test.failure.ignore clean install'
